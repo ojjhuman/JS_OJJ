@@ -8,6 +8,7 @@
     <title></title>
 
   </head>
+  var target = document.querySelector('body');
 
 
   <body>
@@ -19,6 +20,20 @@
       document.querySelector('body').style.backgroundColor='white';
       document.querySelector('body').style.color='blue';
     ">
+    <input id="night_day" type="button" value="night" onclick="
+      if(this.value === 'night'){
+        document.querySelector('body').style.backgroundColor='black';
+        document.querySelector('body').style.color='yellow';
+        document.querySelector('#night_day').value= 'day';
+      }else{
+        document.querySelector('body').style.backgroundColor='white';
+        document.querySelector('body').style.color='blue';
+        document.querySelector('#night_day').value= 'night';
+      }
+    ">
+
+
+
     <h2 style="color:powderblue">JadvaScript</h2>
 
     <span class="js">JavaSdfadfsf</div>
